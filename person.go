@@ -5,14 +5,14 @@ import "fmt"
 type person struct {
 	firstName string
 	lastName  string
-	contact   contactInfo
+	contactInfo
 }
 
 func newPerson(firstName string, lastName string, email string, zipCode int) person {
 	return person{
-		firstName: firstName,
-		lastName:  lastName,
-		contact:   newContactInfo(email, zipCode),
+		firstName:   firstName,
+		lastName:    lastName,
+		contactInfo: newContactInfo(email, zipCode),
 	}
 }
 
@@ -24,7 +24,7 @@ func anotherNewPerson(firstName string, lastName string, email string, zipCode i
 	var newPerson person
 	newPerson.firstName = firstName
 	newPerson.lastName = lastName
-	newPerson.contact = newContactInfo(email, zipCode)
+	newPerson.contactInfo = newContactInfo(email, zipCode)
 	return newPerson
 }
 
