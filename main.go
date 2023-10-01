@@ -1,7 +1,6 @@
 package main
 
 func main() {
-	cards := newDeck()
-	cards.shuffle()
-	cards.print()
+	alex := anotherNewPerson("Alex", "Anderson")
+	alex.print()
 }

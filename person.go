@@ -1,5 +1,7 @@
 package main
 
+import "fmt"
+
 type person struct {
 	firstName string
 	lastName  string
@@ -17,8 +19,12 @@ func otherNewPerson(firstName string, lastName string) person {
 }
 
 func anotherNewPerson(firstName string, lastName string) person {
-	person := person{}
-	person.firstName = firstName
-	person.lastName = lastName
-	return person
+	var newPerson person
+	newPerson.firstName = firstName
+	newPerson.lastName = lastName
+	return newPerson
+}
+
+func (p person) print() {
+	fmt.Printf("%+v", p)
 }
