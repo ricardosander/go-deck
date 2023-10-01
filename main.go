@@ -1,6 +1,6 @@
 package main
 
 func main() {
-	alex := anotherNewPerson("Alex", "Anderson")
+	alex := anotherNewPerson("Alex", "Anderson", "alex@anderson.com", 123)
 	alex.print()
 }
