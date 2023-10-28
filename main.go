@@ -1,7 +1,12 @@
 package main
 
+import "fmt"
+
 func main() {
-	alex := anotherNewPerson("Alex", "Anderson", "alex@anderson.com", 123)
-	alex.updateName("Alexander")
-	alex.print()
+	colors := map[string]string{
+		"red":   "#ff0000",
+		"green": "#00ff00",
+		"blue":  "#0000ff",
+	}
+	fmt.Print(colors)
 }
