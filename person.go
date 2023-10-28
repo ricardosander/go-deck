@@ -28,6 +28,10 @@ func anotherNewPerson(firstName string, lastName string, email string, zipCode i
 	return newPerson
 }
 
+func (p *person) updateName(name string) {
+	(*p).firstName = name
+}
+
 func (p person) print() {
 	fmt.Printf("%+v", p)
 }
